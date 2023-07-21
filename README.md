@@ -60,7 +60,7 @@ AA-Discordbot for [Alliance Auth](https://gitlab.com/allianceauth/allianceauth).
 * Install the app with your venv active
 
 ```bash
-pip install allianceauth-discordbot
+pip install pns-allianceauth-discordbot
 ```
 
 * Add `'aadiscordbot',` to your INSTALLED_APPS list in local.py.
