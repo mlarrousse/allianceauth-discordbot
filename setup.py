@@ -11,7 +11,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='allianceauth-discordbot',
+    name='pns-allianceauth-discordbot',
     version=aadiscordbot.__version__,
     packages=find_packages(),
     include_package_data=True,
@@ -19,7 +19,7 @@ setup(
     description='Alliance Auth Discord Bot',
     long_description=README,
     long_description_content_type='text/markdown',
-    url='https://github.com/pvyParts/allianceauth-discordbot',
+    url='https://github.com/mlarrousse/allianceauth-discordbo',
     author='ak',
     author_email='ak@ak.auth',
     classifiers=[
