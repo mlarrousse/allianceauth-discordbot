@@ -27,6 +27,5 @@ jobs:
       - name: Build Python
         run: make package
 
-      - name: Uploade Package
-        if: ${{ !env.ACT }} # Don't run in a local test environment
-        run: make deploy
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
