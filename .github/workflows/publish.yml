@@ -8,6 +8,9 @@ on:
 
 jobs:
   release:
+    environment:
+      name: pypi
+      url: https://pypi.org/p/pns-allianceauth-discordbot
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -29,6 +32,3 @@ jobs:
 
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          user: __token__
-          password: ${{ secrets.PYPI_API_TOKEN }}
